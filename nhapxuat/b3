@@ -1,0 +1,13 @@
+include <stdio.h>
+
+int main(){
+    int a,b;
+    printf("nhap a,b: ", a,b);
+    scanf("%d  %d",&a,&b);
+    int cong = a+b;
+    int tru = a-b;
+    int nhan = a*b;
+    float chia = (float)a/b;
+    printf("cong: %d\n tru: %d\n nhan: %d\n chia: %.2f",cong,tru,nhan,chia);
+    return 0;
+    }
