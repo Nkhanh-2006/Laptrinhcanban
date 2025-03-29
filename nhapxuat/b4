@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float r;
+    printf("nhap ban kinh:",r);
+    scanf("%f",&r);
+    float S=4*M_PI*pow(r,2);
+    float V=(4.0/3.0)*M_PI*pow(r,3);
+    printf("S=%.2f\nV= %.2f",S,V);
+    return 0;
+}
