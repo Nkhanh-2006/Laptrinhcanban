@@ -1,0 +1,18 @@
+#include <stdio.h>
+ int main()
+ {
+     float dtb;
+     printf("nhap diem: ");
+     scanf("%f",&dtb);
+    if(dtb<5){
+        printf("Yeu");
+     }else if(dtb>=5 && dtb<7){
+        printf("Trung binh");
+     }else if(dtb>=7 && dtb<8){
+        printf("Kha");
+     }else if(dtb>=8 && dtb<9){
+        printf("Gioi");
+     }else{
+        printf("Xuat sac");}
+     return 0;
+ }
