@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+long long factorial(int n){
+    if(n == 0 || n == 1){
+        return 1;
+    }
+    return n * factorial(n-1);
+}
+int main(){
+    printf("nhap so :");
+    int n;
+    scanf("%d",&n);
+  long long k =   factorial(n);
+  printf("gia tri cua %d! la : %lld", n,k);
+    return 0;
+}
