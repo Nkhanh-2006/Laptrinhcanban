@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main(){
+    int col,row;
+    printf("nhap hang :");
+    scanf("%d",&row);
+    printf("nhap cot :");
+    scanf("%d",&col);
+    int ma1[row][col], ma2[row][col], sum[row][col];
+    printf("nhap ma tran 1\n");
+    for(int i = 0 ;i<row;i++){
+        for(int j = 0;j<col;j++){
+            printf("\n");
+            printf("nhap du lieu ma tran 1 [%d][%d]: " ,i,j);
+            scanf("%d", &ma1[i][j]);
+
+        }
+    }
+    printf("nhap ma tran 2\n");
+    for(int i = 0;i<row;i++){
+        for(int j = 0 ; j<col;j++){
+            printf("\n");
+            printf("nhap du lieu ma tran 2[%d][%d]: ", i,j);
+            scanf("%d", &ma2[i][j]);
+        }
+    } printf("ma tran tong la:\n");
+    for(int i = 0; i<row;i++){
+        for(int j = 0; j<col;j++){
+            sum[i][j] = ma1[i][j] + ma2[i][j];
+            printf("%d ", sum[i][j]);}
+            printf("\n");
+
+    }
+}
